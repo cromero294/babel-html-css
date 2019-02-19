@@ -1,0 +1,15 @@
+div#padre {
+    display: flex;
+    /* flex-direction: column; */
+    border: 1px solid black;
+    width: 40%;
+    /* height: 500px; */
+    flex-wrap: wrap;
+}
+
+div.hijo {
+    background-color: orange;
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+}
