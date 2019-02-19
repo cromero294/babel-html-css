@@ -11,32 +11,52 @@
     <a href="ejemplos.html/#Lorem">Lorem</a>
     <hr>
     <form action="/login" method ="POST">
-        <div>
-            <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="username">
-        </div>
-        <div>
-            <label for="pass">Password:</label>
-            <input type="password" id="pass" name="pw">
-        </div>
-        <div>
-            <label for="email">email:</label>
-            <input type="email" id="email" name="email">
-        </div>
-        <div>
-            <label for="color">color:</label>
-            <input type="color" id="color" name="color">           
-        </div>
-        <div>
-            <label for="url">url:</label>
-            <input type="url" id="url" name="url">           
-        </div>
-        <div>
-            <label for="radio">Radio:</label>
-            <input type="radio" id="radio" name="verdad" value="si">
-            <input type="radio" id="radio" name="verdad" value="no">
-            <!-- Sólo se puede seleccionar uno si tienen el mismo nombre -->
-        </div>
+        <fieldset>
+            <legend>Datos login</legend>
+            <div>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="username" placeholder="John Doe" autofocus pattern="[aA].+" required>
+            </div>
+            <div>
+                <label for="pass" required>Password:</label>
+                <input type="password" id="pass" name="pw">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Otros datos</legend>
+            <div>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com">
+            </div>
+            <div>
+                <label for="color">color:</label>
+                <input type="color" id="color" name="color">           
+            </div>
+            <div>
+                <label for="url">url:</label>
+                <input type="url" id="url" name="url">           
+            </div>
+            <div>
+                <label for="radio">Radio:</label>
+                <input type="radio" id="radio" name="verdad" value="si" checked>
+                <input type="radio" id="radio" name="verdad" value="no">
+                <!-- Sólo se puede seleccionar uno si tienen el mismo nombre -->
+            </div>
+            <div>
+                <label for="precio">precio:</label>
+                <input type="number" id="precio" name="precio" step="0.01" min="0" max="10">           
+            </div>
+            <div>
+                <select name="opcion" id="opcion">
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                    <option value="3">Opción 3</option>
+                    <option value="4">Opción 4</option>
+                    <option value="5">Opción 5</option>
+                </select>
+            </div>
+        </fieldset>
+        
         <button type="submit">Login</button>
         <!-- 
         {
