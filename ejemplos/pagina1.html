@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Página 1</h1>
+    <a href="ejemplos.html/#Lorem">Lorem</a>
+    <hr>
+    <form action="/login" method ="POST">
+        <div>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="username">
+        </div>
+        <div>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pw">
+        </div>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="color">color:</label>
+            <input type="color" id="color" name="color">           
+        </div>
+        <div>
+            <label for="url">url:</label>
+            <input type="url" id="url" name="url">           
+        </div>
+        <div>
+            <label for="radio">Radio:</label>
+            <input type="radio" id="radio" name="verdad" value="si">
+            <input type="radio" id="radio" name="verdad" value="no">
+            <!-- Sólo se puede seleccionar uno si tienen el mismo nombre -->
+        </div>
+        <button type="submit">Login</button>
+        <!-- 
+        {
+            username: 'mario',
+            pw: '1234'
+        }
+         -->
+    </form>
+
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>La 1</th>
+                <th>La 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>21:00</th>
+                <td rowspan=2>Telediario 2</td>
+                <td>Página 2</td>
+            </tr>
+            <tr>
+                <th>21:30</th><td>Ese Programa...</td>
+            </tr>
+            <tr>
+                <th>22:00</th><td>Lo siguiente</td><td>Planeta azul</td>
+            </tr>
+            <tr>
+                <th>22:30</th><td>El rey Arturo</td><td>Un país...</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
