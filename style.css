@@ -1,0 +1,47 @@
+#titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#titulo > * {
+    padding: 0 50px;
+}
+
+.hlink {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 250px;
+}
+
+#padre {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#padre {
+    justify-content: space-between;
+}
+
+
+section {
+    width:55%;
+}
+
+aside {
+    width:35%;
+    text-align: center;
+}
+
+aside > ul {
+    list-style: none;
+}
+
+article.hijo {
+    width: 40%;
+}
