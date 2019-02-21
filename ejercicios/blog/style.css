@@ -2,6 +2,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: #ECDBEF;
+}
+
 #titulo {
     display: flex;
     justify-content: space-between;
@@ -22,8 +26,31 @@
 .hlink {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    /* justify-content: space-between; */
     width: 250px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+nav > * {
+    height: 100%;
+    text-align: center;
+}
+
+li {
+    height: 100%;
+    text-align: center;
+}
+
+.hlink > * {
+    height: 100%;
+    width: 200px;
+    text-align: center;
+}
+
+.hlink > *:hover {
+    background-color: #712D7B;
 }
 
 #padre {
@@ -35,10 +62,12 @@
 
 section#padre {
     justify-content: space-between;
+    text-align:justify;
 }
 
 div#padre {
     margin-top: 50px;
+    padding: 0 50px;
 }
 
 section {
@@ -46,8 +75,10 @@ section {
 }
 
 aside {
+    /* display: flex; */
     width:35%;
     text-align: center;
+    /* align-items: center; */
 }
 
 aside > ul {
@@ -56,4 +87,54 @@ aside > ul {
 
 article.hijo {
     width: 40%;
+}
+
+footer {
+    color: grey;
+}
+
+img {
+    /* background-color: black; */
+    width: 400px;
+    height: 200px;
+}
+
+img:hover {
+    animation: tada 4s;
+}
+
+@keyframes tada {
+    0% {
+
+    }
+    10% {
+        transform: scale(0.8) rotate(10deg);
+    }
+    15% {
+        transform: scale(1.5) rotate(-10deg);
+    }
+    17% {
+        transform: scale(1.5) rotate(10deg);
+    }
+    19% {
+        transform: scale(1.5) rotate(-10deg);
+    }
+    21% {
+        transform: scale(1.5) rotate(10deg);
+    }
+    23% {
+        transform: scale(1.5) rotate(-10deg);
+    }
+    25% {
+        transform: scale(1.5) rotate(10deg);
+    }
+    27% {
+        transform: scale(1.5) rotate(-10deg);
+    }
+    29% {
+        transform: scale(1.5) rotate(10deg);
+    }
+    35% {
+        transform: scale(1) rotate(0);
+    }
 }
