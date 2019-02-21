@@ -89,17 +89,21 @@ article.hijo {
     width: 40%;
 }
 
+article.hijo:hover {
+    transform: scale(1.2);
+}
+
 footer {
     color: grey;
 }
 
-img {
+img.tada-anim {
     /* background-color: black; */
     width: 400px;
     height: 200px;
 }
 
-img:hover {
+img.tada-anim:hover {
     animation: tada 4s;
 }
 
@@ -136,5 +140,39 @@ img:hover {
     }
     35% {
         transform: scale(1) rotate(0);
+    }
+}
+
+img.beat-anim {
+    /* background-color: black; */
+    width: 400px;
+    height: 200px;
+}
+
+img.beat-anim:hover {
+    animation: beat 4s;
+}
+
+@keyframes beat {
+    0% {
+
+    }
+    5% {
+        transform: scale(1.2);
+    }
+    10% {
+        transform: scale(1);
+    }
+    11%{
+        transform: scale(1);
+    }
+    17%{
+        transform: scale(1);
+    }
+    17% {
+        transform: scale(1.2);
+    }
+    22% {
+        transform: scale(1);
     }
 }
