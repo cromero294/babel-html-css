@@ -1,0 +1,120 @@
+/* * {
+    color: blue;
+}
+
+h2, h3 {
+    color: yellow;
+}
+
+div > p {
+    font-style: italic;
+}
+
+div p {
+    font-weight: bold;
+}
+
+.titulo, .subtitulo {
+    text-decoration: underline;
+}
+
+#titulo-principal {
+    border: 1px solid black;
+}
+
+label + input {
+    width: 400px;
+}
+
+label ~ input {
+    height: 50px;
+}
+
+input[required] {
+    border: 1px solid orange;
+}
+
+a[href="www.babel.es"] {
+    color: green;
+}
+
+a[href$=".com"] {
+    text-decoration: none;
+}
+
+a[href^="http"] {
+    text-decoration: line-through;
+}
+
+a[href*="b"] {
+    font-size: 20px;
+}
+
+a:not([href^="http"]) {
+    text-decoration: overline;
+}
+
+h1:not(.subtitulo) {
+    text-decoration: line-through;
+} */
+
+h1 {
+    color: orange;
+    /* color: orange !important; NO HACER ESTO */
+}
+
+h1 {
+    color: blue;
+}
+
+div p {
+    font-style: normal;
+}
+
+p {
+    font-style: italic;
+}
+
+a {
+    color: #66aa33;
+}
+
+a[href*=".com"] {
+    color: red;
+}
+
+a[href*=".com"][target] {
+    color: rgb(0, 0, 255);
+}
+
+span {
+    display: block;
+}
+
+div.opacity {
+    border: 2px dashed darkblue;
+    background-color: black;
+    /* opacity: 0.5; */
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    color: white;
+    overflow: hidden;
+    box-shadow: 20px 70px 200px 20px blue;
+    border-radius: 5%;
+    background: repeating-linear-gradient(to right top, darkred, black);
+}
+
+body {
+    /* background-image: url(imagen_madera.jpg); */
+    background-color: linear-gradient(red, blue);
+    /* background-repeat: no-repeat; */
+}
+
+div#conimagen {
+    background-image: url(imagen_madera.jpg);
+    width: 350px;
+    height: 350px;
+    transform: scale(1, 2) rotate(45deg);
+    /* transform: transform(45deg); */
+}
