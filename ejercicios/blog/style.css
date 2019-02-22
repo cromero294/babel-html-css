@@ -17,6 +17,7 @@ body{
     border-bottom: 1px solid black;
     box-shadow: 3px 3px 20px 1px;
     background: linear-gradient(to right top, #D0ABD6, #712D7B);
+    z-index: 1;
 }
 
 #titulo > * {
@@ -41,7 +42,31 @@ nav > * {
 li {
     height: 100%;
     text-align: center;
+    transition: 0.5s;
 }
+
+a.lhead {
+    text-decoration: none;
+    /* display: inline-block; */
+    display: flex;
+    height: 50px;
+    width: 100px;
+    color: black;
+    top: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: white;
+}
+
+li:hover {
+    background-color: #AD7CB5;
+}
+
 
 .hlink > * {
     height: 100%;
@@ -75,14 +100,55 @@ section {
 }
 
 aside {
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
     width:35%;
     text-align: center;
-    /* align-items: center; */
+    align-items: center;
+    justify-content: center;
 }
 
 aside > ul {
     list-style: none;
+}
+
+aside > ul > li {
+    padding: 5px 0;
+    background-color: #D2B1D8;
+    /* align-items: center; */
+    transition: 0.5s;
+}
+
+.titulo-aside {
+    font-size: 36px;
+    width: 300px;
+    padding-left: 30px;
+}
+
+.titulo-aside:hover {
+    transform: scale(1.2);
+}
+
+aside > ul > li > a {
+    text-decoration: none;
+    /* display: inline-block; */
+    display: flex;
+    height: 50px;
+    width: 350px;
+    color: black;
+    top: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+aside > ul > li > a:hover {
+    color: white;
+}
+
+aside > ul > li:hover {
+    background-color: #AD7CB5;
 }
 
 article.hijo {
