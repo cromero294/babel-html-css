@@ -20,6 +20,15 @@ body{
     z-index: 1;
 }
 
+#titulo > h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#titulo > nav {
+    width: 100%;
+}
+
 #titulo > * {
     padding: 0 50px;
 }
@@ -88,6 +97,7 @@ li:hover {
 section#padre {
     justify-content: space-between;
     text-align:justify;
+    flex-wrap: wrap;
 }
 
 div#padre {
@@ -96,13 +106,13 @@ div#padre {
 }
 
 section {
-    width:55%;
+    width:100%;
 }
 
 aside {
     display: flex;
     flex-wrap: wrap;
-    width:35%;
+    width:100%;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -152,7 +162,7 @@ aside > ul > li:hover {
 }
 
 article.hijo {
-    width: 40%;
+    width: 100%;
 }
 
 article.hijo:hover {
@@ -240,5 +250,29 @@ img.beat-anim:hover {
     }
     22% {
         transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 768px){
+    aside {
+        width:40%;
+    }
+
+    section {
+        width:55%;
+    }
+
+    article.hijo {
+        width: 40%;
+    }
+
+    #titulo > h1 {
+        width: 50%;
+        text-align: start;
+    }
+    
+    #titulo > nav {
+        width: 25%;
+        align-items: center;
     }
 }
